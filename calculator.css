@@ -1,0 +1,599 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin-left: 0;
+}
+
+body {
+  background-image: url("background_file.jpeg");
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("background_file.jpeg");
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    height: 50px;
+    width: 65vmin;
+    justify-content: center;
+    
+
+}
+h1{
+    text-align: center;
+    height: 35px;
+}
+.main_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    height: 85vmin;
+    width: 70vmin;
+    background: #524948;
+
+    
+    
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+}
+.main_scientific{
+    height:92vmin;
+    width: 95vmin;
+    background: #524948;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+    
+}
+.screen{
+    height: 20%;
+    width: 90%;
+    border: 10px;
+    margin-top: 20px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    background: #D7F9F1;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+    justify-content: flex-end;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+#screen_scientific{
+    height: 25%;
+    width: 95%;
+    border: 10px;
+    margin-top: 5px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    background: #D7F9F1;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+    justify-content: flex-end;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.screen p{
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    white-space: pre-wrap;
+}
+.items{
+    height: 70%;
+    width: 90%;
+    background: #F4C095;
+    
+
+}
+.items_scientific{
+    height: 70%;
+    display: grid;
+    gap: 6px;
+    width: 93%;
+    background: #F4C095;
+    padding: 5px;
+}
+.box{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box_scientific{
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.btn{
+    width: 20%;
+    height: 90%;
+    border-radius: 100%;
+    font-size:xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    
+    
+	box-sizing: border-box;
+	border: 2px solid transparent;
+
+    box-shadow: 2px 6px 0 #1e40af;
+    transition:
+    transform 80ms ease-out,
+    box-shadow 80ms ease-out,
+    background-color 120ms ease;
+
+}
+.btn_scientific{
+    width: 15%;
+    height: 80%;
+    border-radius: 100%;
+    font-size:xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    color: red;
+	box-sizing: border-box;
+	border: 2px solid transparent;
+
+    box-shadow: 2px 6px 0 #1e40af;
+    transition:
+    transform 80ms ease-out,
+    box-shadow 80ms ease-out,
+    background-color 120ms ease;
+
+}
+.btn:hover{
+    background:yellow;
+    cursor: pointer;
+    color:blue;
+}
+.btn_scientific:hover{
+    background:yellow;
+    cursor: pointer;
+    color:blue;
+}
+.btn:active{
+    border: 2px solid;
+    border-color: red;
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #1e40af;
+}
+.btn_scientific:active{
+    color:blue;
+    border: 2px solid;
+    border-color: red;
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #1e40af;
+}
+#show{
+    font-size:xxx-large;
+}
+#arrow{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    padding: 5px;
+}
+a:link{
+    text-decoration: none;
+}
+.main_body_scientific{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+@media all and (min-width: 531px) and (max-width:690px){
+    .header{
+        width: 71vmin;
+        height: 30px;
+        padding-bottom: 9px;
+    }
+    .btn{
+        font-size:xx-large;
+    }
+    .btn_scientific{
+        font-size: xx-large;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:532px) and (min-width: 470px){
+    .header{
+        width: 110vmin;
+        height: 25px;
+        padding-bottom: 12px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 110%;
+    }
+    .box_scientific{
+        height: 40px;
+    }
+    .btn{
+        font-size:xx-large;
+    }
+    .btn_scientific{
+        font-size: xx-large;
+    }
+    .items_scientific{
+        height: 70%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:90vmin;
+        width: 94vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:491px) and (min-width: 480px){
+    .header{
+        width: 95vmin;
+        height: 30px;
+        padding-bottom: 12px;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:481px) and (min-width: 450px){
+    .header{
+        width: 95vmin;
+        height: 30px;
+        padding-bottom: 12px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 40px;
+    }
+    .btn{
+        font-size:x-large;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 120%;
+        font-size: x-large;
+    }
+    .items_scientific{
+        height: 70%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+    
+}
+
+@media all and (max-width:451px) and (min-width: 385px){
+    .header{
+        width: 99vmin;
+        height: 30px;
+        padding-bottom: 12px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 45px;
+    }
+    .btn{
+        font-size:larger;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: larger;
+    }
+    .items_scientific{
+        height: 70%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:390px) and (min-width: 350px){
+    .header{
+        width: 99vmin;
+        height: 30px;
+        padding-bottom: 12px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 30px;
+    }
+    .btn{
+        font-size:larger;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: larger;
+    }
+    .items_scientific{
+        height: 68%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:360px) and (min-width: 335px){
+    .header{
+        width: 30vmin;
+        height: 30px;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 30px;
+    }
+    .btn{
+        font-size:larger;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: larger;
+    }
+    .items_scientific{
+        height: 68%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 85vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+
+@media all and (max-width:337px) and (min-width: 300px){
+    .header{
+        width: 30vmin;
+        height: 30px;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 30px;
+    }
+    .btn{
+        font-size:large;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: large;
+    }
+    .items_scientific{
+        height: 68%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 90vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width:300px) and (min-width: 250px){
+    .header{
+        width: 30vmin;
+        height: 30px;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 20px;
+    }
+    .btn{
+        font-size:large;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: large;
+    }
+    .items_scientific{
+        height: 68%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 90vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
+
+@media all and (max-width:250px) and (min-width: 220px){
+    .header{
+        width: 30vmin;
+        height: 30px;
+        padding-bottom: 40px;
+    }
+    .arrow{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .box_scientific{
+        height: 20px;
+    }
+    .btn{
+        font-size:large;
+    }
+    .btn_scientific{
+        width: 17%;
+        height: 100%;
+        font-size: large;
+    }
+    .items_scientific{
+        height: 68%;
+        width: 93%;
+    }
+    .main_scientific{
+        height:100vmin;
+        width: 90vmin;
+    }
+    .main_body_scientific{
+        margin-top: 100px;
+    }
+    .main_body{
+        margin-top: 100px;
+    }
+}
+
